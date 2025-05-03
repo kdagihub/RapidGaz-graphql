@@ -47,7 +47,7 @@ export default function Input({
         <TextInput
           style={[
             styles.input,
-            leftIcon && styles.inputWithIcon,
+            (leftIcon ? styles.inputWithIcon : {}),
             secureTextEntry && styles.passwordInput,
             style
           ]}
